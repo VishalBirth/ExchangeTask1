@@ -46,7 +46,8 @@ class RateHandler {
      * @param keys array of string
      */
     private filterObjectByKeys(objectList: {}, keys: [string]) {
-        return Object.keys(objectList).filter(key => keys.indexOf(key) !== -1).reduce((obj, key) => {
+        let upper_keys = keys.map(a => a.toUpperCase());
+        return Object.keys(objectList).filter(key => upper_keys.indexOf(key.toUpperCase()) !== -1).reduce((obj, key) => {
             obj[key] = objectList[key];
             return obj;
         }, {});
