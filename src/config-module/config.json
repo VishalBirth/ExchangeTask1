@@ -1,7 +1,7 @@
 {
     "criteria": {
-      "GBP": 0.03,
-      "EUR": 0.1
+      "GBP": 0,
+      "EUR": 0
     },
     "currencies": [
       "GBP",
