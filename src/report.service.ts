@@ -9,14 +9,14 @@ export class ReportService {
         // tslint:disable-next-line:no-console
         const info = `${timeStamp} ${base} ${currency} ${change}\n`;
         // tslint:disable-next-line:no-console
-        console.log(info);
+        // console.log(info);
 
         fs.appendFile('./report.log', info, (err) => {
             if (err) {
                 return console.log(err);
             }
 
-            console.log("The file was saved!");
+            console.log("Logged to File");
         });
     }
 }
